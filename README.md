@@ -58,7 +58,10 @@ About Me
 [![](https://github-readme-streak-stats.herokuapp.com/?user=dcapacho3&theme=material-palenight)](https://github.com/dcapacho3)
 </div>
 
+---
 
+Recent Activity
+<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=dcapacho3&theme=tokyo-night&area=true" alt="activity graph" /> </p>
 
 ---
 
