@@ -62,6 +62,7 @@
 
 ---
 
+![snake gif](https://github.com/dcapacho3/dcapacho3/blob/output/github-snake-dark.svg)
 
 
 ---
