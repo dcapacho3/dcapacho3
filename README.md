@@ -4,7 +4,7 @@
 </p>
 <p align="center"> <em>"Making robots navigate one line of code at a time."</em></p>
 
-🧑‍💻 About Me
+About Me
 
 - From Colombia 🇨🇴
 - Mechatronics Engineer @ Universidad Autónoma de Occidente
@@ -12,7 +12,7 @@
 - Languages: Spanish 🇪🇸 | English 🇬🇧 (C1) | German 🇩🇪 (A1)
 - Always open to learn new things
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 #### Robotics & Control  
 ![ROS](https://img.shields.io/badge/ROS-22314E?style=flat&logo=ros&logoColor=white)
@@ -67,7 +67,7 @@
 
 ---
 
-### 📫 Get in Touch
+### Get in Touch
 
 - ✉️ dcapachob@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/david-capacho-parra/?locale=en)
@@ -75,7 +75,7 @@
 
 ---
 
-<p align="center">Thanks for stopping by! 😊 Happy coding! 🚀</p>
+<p align="center">Thanks for stopping by! Happy coding! </p>
 
 
 <!--
