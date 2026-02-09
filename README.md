@@ -68,15 +68,6 @@ Recent Activity
 ![snake gif](https://github.com/dcapacho3/dcapacho3/blob/output/github-snake-dark.svg)
 
 
----
-
-### Get in Touch
-
-- ✉️ dcapachob@gmail.com
-- 💼 [LinkedIn](https://www.linkedin.com/in/david-capacho-parra/?locale=en)
-
-
----
 
 <p align="center">Thanks for stopping by! Happy coding! </p>
 
