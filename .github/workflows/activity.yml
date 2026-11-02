@@ -10,5 +10,6 @@ jobs:
     steps:
       - uses: jamesgeorge007/github-activity-readme@master
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: dcapacho3
           MAX_LINES: 6
