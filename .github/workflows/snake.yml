@@ -79,7 +79,9 @@ jobs:
 
       # Step 3: Streak card, counted in Bogota time, private repos included
       - name: Build streak card
-        run: python3 .github/streak.py dist/streak.svg
+        run: |
+          sudo chown -R "$USER" dist
+          python3 .github/streak.py dist/streak.svg
         env:
           GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
 
