@@ -98,7 +98,11 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_other: yes
 
-      # Step 5: Deploy the generated files to the 'output' branch
+      # The action saves inside its own mount, not the workspace
+      - name: Copy stats card
+        run: cp /metrics_renders/dist/stats.svg dist/stats.svg
+
+      # Step 6: Deploy the generated files to the 'output' branch
 
       - name: Deploy to Output Branch
 
