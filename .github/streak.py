@@ -73,21 +73,32 @@ def streaks(days, today):
 
 
 def card(total, current, longest, today):
-    def col(x, big, label):
+    ring = 2 * 3.14159 * 42
+    fill = ring * min(current / longest, 1) if longest else 0
+
+    def side(x, big, label):
         return (
-            f'<text x="{x}" y="90" text-anchor="middle" font-size="34" font-weight="700" fill="#c3e88d">{big}</text>'
-            f'<text x="{x}" y="125" text-anchor="middle" font-size="14" fill="#a6accd">{label}</text>'
+            f'<text x="{x}" y="92" text-anchor="middle" font-size="32" font-weight="700" fill="#e6edf3">{big}</text>'
+            f'<text x="{x}" y="118" text-anchor="middle" font-size="13" fill="#8b949e">{label}</text>'
         )
 
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" '
-        'font-family="Segoe UI, Ubuntu, sans-serif">'
-        '<rect width="495" height="195" rx="4.5" fill="#292d3e"/>'
-        + col(85, total, "Commits, last year")
-        + col(247, current, "Current streak")
-        + col(410, longest, "Longest streak")
-        + f'<text x="247" y="175" text-anchor="middle" font-size="12" fill="#676e95">'
-        f"{today:%b} {today.day}, {TZ.key}</text></svg>"
+        'font-family="Segoe UI, Ubuntu, Helvetica, sans-serif">'
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">'
+        '<stop offset="0" stop-color="#00f7ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient></defs>'
+        '<rect x="0.5" y="0.5" width="494" height="194" rx="10" fill="#0d1117" stroke="#30363d"/>'
+        '<line x1="165" y1="40" x2="165" y2="140" stroke="#21262d"/>'
+        '<line x1="330" y1="40" x2="330" y2="140" stroke="#21262d"/>'
+        + side(82, total, "Commits, last year")
+        + '<circle cx="247" cy="82" r="42" fill="none" stroke="#21262d" stroke-width="7"/>'
+        f'<circle cx="247" cy="82" r="42" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round" '
+        f'stroke-dasharray="{fill:.1f} {ring:.1f}" transform="rotate(-90 247 82)"/>'
+        f'<text x="247" y="94" text-anchor="middle" font-size="34" font-weight="700" fill="#e6edf3">{current}</text>'
+        '<text x="247" y="148" text-anchor="middle" font-size="13" font-weight="600" fill="#00f7ff">Current streak</text>'
+        + side(412, longest, "Longest streak")
+        + f'<text x="247" y="180" text-anchor="middle" font-size="11" fill="#6e7681">'
+        f"{today:%b} {today.day} - counted in {TZ.key}</text></svg>"
     )
 
 
