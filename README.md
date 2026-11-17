@@ -26,13 +26,13 @@
 ## Stats
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=dcapacho3&show_icons=true&theme=algolia&include_all_commits=true&count_private=true" />
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=dcapacho3&layout=compact&langs_count=8&theme=algolia" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api?username=dcapacho3&show_icons=true&theme=algolia&include_all_commits=true&count_private=true" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=dcapacho3&layout=compact&langs_count=8&theme=algolia" />
 </p>
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dcapacho3&theme=material-palenight" />
 </p>
 
-![snake gif](https://github.com/dcapacho3/dcapacho3/blob/output/github-snake-dark.svg)
+![snake gif](https://raw.githubusercontent.com/dcapacho3/dcapacho3/output/github-snake-dark.svg)
 
 <p align="center">Thanks for stopping by.</p>
